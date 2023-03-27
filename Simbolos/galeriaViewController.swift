@@ -19,6 +19,8 @@ class galeriaViewController: UIViewController {
     
     var contador = 0
     
+    var opc:Int = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +31,13 @@ class galeriaViewController: UIViewController {
     
     @IBAction func press(_ sender: Any) {
         
-        Actualizar()
+        opc+=1
+        
+        if (opc==1){
+            
+            Actualizar()
+            
+        }
         
     }
     
